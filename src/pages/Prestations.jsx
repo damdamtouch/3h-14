@@ -1,5 +1,5 @@
 import React from "react";
-
+import Tile from "../components/Tile";
 function Prestations() {
   return (
     <div className="Prestations">
@@ -21,9 +21,9 @@ function Prestations() {
           src="https://player.vimeo.com/video/787883133?h=f70a4d9c67"
           width="640"
           height="360"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
 
@@ -31,31 +31,59 @@ function Prestations() {
 
       <div>
         <h1>Institutionnel</h1>
-        <div>La caravane</div>
-        <div>Gropuama</div>
-        <div>Les CV de l'équipe</div>
+        <Tile
+          title="La caravane"
+          paragraphe="Réalisation de la rétrospective vidéo du tour de France de la Compagnie des Aidants, un road trip dans 9 villes […]"
+        />
+        <Tile
+          title="Gropuama"
+          paragraphe="Prestations de cadrage sur des vidéos de communication autour du projet L’étape du tour, organisé par Groupama pour ses collaborateurs. […]"
+        />
+        <Tile
+          title="Les CV de l'équipe"
+          paragraphe="Les CV de L’Équipée, ce sont des interviews courtes et percutantes face caméra, où des professionnel(le)s racontent le parcours qui […]"
+        />
       </div>
 
       <div>Sperator</div>
 
       <div>
         <h1>Publicité</h1>
-        <div>Jump'in</div>
-        <div>Pénélope</div>
+
+        <Tile
+          title="Jump'in"
+          paragraphe="Réalisation d’un clip de mise en valeur de l’entreprise familiale Jump’In. Jumpin – Made with savoir-faire from troisheuresmoinslequart on Vimeo. […]"
+        />
+        <Tile
+          title="Pénélope"
+          paragraphe="Réalisation d’un clip de promotion d’un gilet airbag pour cavaliers commercialisé par la marque Pénélope. Durée : 1’41 – Mai […]"
+        />
       </div>
       <div>Sperator</div>
 
       <div>
         <h1>Captations</h1>
-        <div>Culte</div>
-        <div>Charlotte</div>
+
+        <Tile
+          title="CULTE @New Morning"
+          paragraphe="Captation live du morceau Natifunk de CULTE au New Morning à Paris. CULTE – Live @ New Morning – Natifunk […]"
+        />
+
+        <Tile
+          title="Charlotte Planchou live session"
+          paragraphe="Captation du morceau Maintenant de Charlotte Planchou en live session au Centre culturel des Bords de Marne.          "
+        />
       </div>
 
       <div>Sperator</div>
 
       <div>
         <h1>Clip musicaux</h1>
-        <div>Rebel Effort</div>
+
+        <Tile
+          title="Rebel Effort - Love Machine"
+          paragraphe="Écriture et réalisation du clip vidéo du titre Love Machine interprété par Rebel Effort"
+        />
       </div>
     </div>
   );
